@@ -12,23 +12,23 @@ class logger:
                 code = code.lower()
                 string = self.string.format(time.strftime('%X %Z'), '{}', str(msg))
                 if code == 'red':
-                        print(string.format('1'))
+                        print string.format('1')
                 elif code == 'green':
-                        print(string.format('2'))
+                        print string.format('2')
                 elif code == 'yellow':
-                        print(string.format('3'))
+                        print string.format('3')
                 elif code == 'purple':
-                        print(string.format('4'))
+                        print string.format('4')
                 elif code == 'magenta':
-                        print(string.format('5'))
+                        print string.format('5')
                 elif code == 'cyan':
-                        print(string.format('6'))
+                        print string.format('6')
                 elif code == 'white':
-                        print(string.format('7'))
+                        print string.format('7')
                 elif code == 'rain' or code == 'rainbow':
-                        print(self.rainbow(msg))
+                        print self.rainbow(msg)
                 else:
-                        return(input(string.format('3')))
+                        return(raw_input(string.format('3')))
 
         def rainbow(self, msg):
                 length = len(msg) - 1
